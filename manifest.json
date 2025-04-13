@@ -1,0 +1,157 @@
+{
+  "name": "Bitcoin, Crypto, Blockchain & Digital Currencies Awakening Space",
+  "short_name": "Bitcoin Awakening",
+  "description": "Decode the cryptocurrencies matrix and reclaim your financial sovereignty.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F7931A",
+  "orientation": "portrait-primary",
+  "categories": [
+    "Spiritual Awakening",
+    "Consciousness Expansion",
+    "Wealth Empowerment",
+    "Mindset Coaching",
+    "Hidden Knowledge",
+    "Occult",
+    "Make Money Online",
+    "Money Coaching",
+    "Conspiracy Truth",
+    "Illumination and Illuminati",
+    "Personal Growth",
+    "bitcoin",
+    "Spiritual Wealth",
+    "Universal Currencies",
+    "currency",
+    "what is bitcoin",
+    "reserve currency",
+    "Bitcoin",
+    "BTC",
+    "buy bitcoin",
+    "bitcoin awakening",
+    "crypto awakening",
+    "financial sovereignty",
+    "blockchain",
+    "crypto truth",
+    "money",
+    "fiat collapse",
+    "CBDC resistance",
+    "digital currency",
+    "digital gold",
+    "money matrix",
+    "DeFi",
+    "tokenization",
+    "RWA",
+    "alpha",
+    "degen",
+    "financial freedom",
+    "satoshi nakamoto",
+    "NFT",
+    "metaverse",
+    "yield farming",
+    "bitcoin pump",
+    "financial revolution",
+    "Bitcoin Consulting"
+  ],
+  "icons": [
+    {
+      "src": "/assets/images/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/favicon/apple-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Go to the homepage",
+      "url": "/index.html",
+      "icons": [
+        {
+          "src": "/assets/images/favicon/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ],
+      "lang": "en",
+      "dir": "ltr"
+    },
+    {
+      "name": "Download - Crypto Profits eBook",
+      "short_name": "eBook",
+      "description": "Download Bitcoin and Crypto Profits eBook",
+      "url": "/CryptoProfits.pdf",
+      "icons": [
+        {
+          "src": "/assets/images/favicon/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ],
+      "lang": "en",
+      "dir": "ltr"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/screenshot2.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/screenshot1.avif",
+      "sizes": "640x480",
+      "type": "image/avif",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/screenshot2.avif",
+      "sizes": "640x480",
+      "type": "image/avif",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://bitcoinawakening.space/"
+    }
+  ],
+  "prefer_related_applications": false,
+  "id": "/manifest.json"
+}
