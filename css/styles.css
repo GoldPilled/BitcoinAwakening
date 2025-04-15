@@ -34,18 +34,32 @@
     --pure-white: #ffffff;
     --container-width: 960px;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     background: var(--pure-white);
     margin: 0;
     font-family: 'Playfair Display', sans-serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.75;
     color: var(--cosmic-black);
   }
 
   h2 {
     font-family: 'Orbitron', sans-serif;
+  }
+
+  a {
+    color: #00FF00;
+  }
+
+  section#hardware {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* optional: vertical centering */
   }
   
   .site-container {
@@ -62,6 +76,7 @@
     flex-direction: row;
     align-items: center;
     border: 1px solid var(--bitcoin-orange);
+    box-shadow: 0 0 10px var(--bitcoin-orange); /* Shiny effect */
     border-radius: 12px;
     margin-bottom: 40px;
     padding: 20px;
@@ -75,7 +90,7 @@
 
   .quiz-image {
     max-width: 100%; /* Ensure the image scales properly */
-    border: 2px solid #00FF00; /* Light green border */
+    border: 1px solid #00FF00; /* Light green border */
     box-shadow: 0 0 10px #00FF00; /* Shiny effect */
     display: block;
     margin: 0 auto; /* Center the image */
@@ -98,10 +113,18 @@
     border-radius: 8px;
     object-fit: cover;
   }
+
+  .img-col .cta-button {
+    width: 100%;              /* Fills entire column width */
+    text-align: center;       /* Center the text inside */
+    display: block;           /* Makes it stretch like a div */
+    box-sizing: border-box;   /* Prevent padding overflow */
+  }
   
   .text-col {
     flex: 2;
     padding: 10px;
+    max-width: 700px; /* ✨ Ideal for readability */
   }
 
   .orange {
@@ -173,6 +196,27 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }  
+
+  /*----Portal -----*/
+  .subtitle {
+    font-size: 1rem;
+    color: #aaa;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  .portal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .portal-nav .cta-button {
+    flex: 1 1 150px;
+    text-align: center;
   }  
   
   /* Responsive Styles */
