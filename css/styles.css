@@ -195,6 +195,79 @@ a:hover {
 /* 📌 Hide .img-col only on mobile for #quiz */
 @media (max-width: 768px) {
   #quiz .img-col {
-      display: none !important;
+    display: none !important;
   }
+}
+
+/* quiz */
+.quiz-col {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#quiz-container {
+  margin-bottom: 1rem;
+}
+
+.quiz-question {
+  margin-bottom: 1rem;
+}
+
+.quiz-options button {
+  display: block;
+  margin: 6px 0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #222;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quiz-options button:hover {
+  background: var(--bitcoin-orange);
+  color: #000;
+}
+
+.quiz-options button.correct {
+  background-color: #00c851;
+  color: #000;
+}
+
+.quiz-options button.wrong {
+  background-color: #ff4444;
+  color: #000;
+}
+
+#quiz-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+#quiz-controls button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--bitcoin-orange);
+  color: #000;
+}
+
+#quiz-result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #1c1c1c;
+  border: 1px solid var(--rebel-green);
+  border-radius: 10px;
+}
+
+#quiz-result p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--bitcoin-orange);
 }
