@@ -44,7 +44,7 @@ body {
   background: var(--pure-white);
   margin: 0;
   font-family: 'Playfair Display', sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.75;
   color: var(--cosmic-black);
 }
@@ -71,7 +71,7 @@ a:hover {
 .site-container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--cosmic-black);
   color: var(--pure-white);
   border-radius: 12px;
@@ -84,9 +84,9 @@ a:hover {
   border: 1px solid var(--bitcoin-orange);
   box-shadow: 0 0 10px var(--bitcoin-orange);
   border-radius: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 20px;
-  gap: 30px;
+  gap: 20px;
   background-color: #111;
 }
 
@@ -128,7 +128,7 @@ a:hover {
   padding: 12px 24px;
   margin-top: 15px;
   background: var(--bitcoin-orange);
-  color: #000;
+  color: black;
   font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
@@ -136,7 +136,6 @@ a:hover {
 }
 
 .cta-button:hover {
-  background-color: #ff9f2c;
   transform: translateY(-2px);
 }
 
@@ -150,13 +149,13 @@ a:hover {
 .footer {
   text-align: center;
   font-size: 0.85rem;
-  margin-top: 60px;
+  margin-top: 50px;
   color: #aaa;
 }
 
 .quote {
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .readiness-slide {
@@ -167,7 +166,7 @@ a:hover {
 .readiness-slide.active {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .slide-text {
