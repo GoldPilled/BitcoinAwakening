@@ -16,8 +16,7 @@
   <meta name="author" content="Candice Cizut">
 
   <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="
-  default-src 'self';
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';
   frame-src 'self';
   style-src 'self' 'unsafe-inline';
   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
@@ -42,16 +41,13 @@
   <meta name="rating" content="general">
   <meta name="revisit-after" content="7 days">
   <meta name="distribution" content="global">
+  <link rel="canonical" href="https://bitcoinawakening.space/">
   <!-- Theme Colors -->
   <meta name="theme-color" content="#F7931A">
   <meta name="msapplication-navbutton-color" content="#F7931A">
   <!-- Robots -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <!-- SEO & Accessibility -->
-  <meta name="distribution" content="global">
-  <meta name="rating" content="general">
-  <link rel="canonical" href="https://bitcoinawakening.space/">
   <!-- Dublin Core Metadata -->
   <meta name="DC.title"
     content="Bitcoin| - Decode The cryptocurrencies Matrix | Bitcoin, Crypto, Blockchain & Digital Currencies Awakening Space">
@@ -99,6 +95,7 @@
     crossorigin="anonymous">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" />
 
   <!-- Fallback for older browsers that do not support onload -->
   <noscript>
@@ -200,7 +197,7 @@
 </head>
 
 <body>
-  <main class="site-container">
+  <main id="main" class="site-container">
 
     <!-- Section Template Start -->
     <section class="section box" aria-labelledby="bitcoin-header">
@@ -246,6 +243,10 @@
       <header>
         <h2 id="portal-header-1" class="green">🧭 Your Portal</h2>
         <p id="portal-desc" class="subtitle">Your Gateway to Crypto, Freedom, & Awakened Wealth</p>
+        <p class="trust-badge">
+          ✅ Trusted by over <strong>10,000+ crypto beginners, pros, wealth, freedom and truth-seekers</strong>
+          worldwide.
+        </p>
       </header>
       <nav class="portal-nav">
         <a class="cta-button" href="#quiz" aria-label="Take the Bitcoin readiness quiz">🔍 Quiz</a>
@@ -265,8 +266,8 @@
         aria-label="Buy Bitcoin and crypto hardware wallet from Ledger">
         <picture>
           <source srcset="/assets/images/ledger.avif" type="image/avif">
-          <img loading="lazy" style="width: 100%; height: auto;" class="quiz-image" src="/assets/images/ledger.png"
-            alt="Ledger Wallet - Buy Bitcoin and Crypto Hardware Wallet">
+          <img width="468" height="60" loading="lazy" style="width: 100%; height: auto;" class="quiz-image"
+            src="/assets/images/ledger.png" alt="Ledger Wallet - Buy Bitcoin and Crypto Hardware Wallet">
         </picture>
       </a>
     </section>
@@ -276,8 +277,8 @@
       <div class="img-col">
         <picture>
           <source srcset="/assets/images/ebook1.avif" type="image/avif">
-          <img loading="lazy" style="width: 100%; height: auto;" src="/assets/images/ebook1.png"
-            alt="Cryptocurrencies Profit From Multiple Income Streams"
+          <img width="147" height="205" loading="lazy" style="width: 100%; height: auto;"
+            src="/assets/images/ebook1.png" alt="Cryptocurrencies Profit From Multiple Income Streams"
             aria-label="Visual of financial freedom through Bitcoin" class="ebook-image">
         </picture>
         <a href="https://bitcoinawakening.space/CryptoProfits.pdf" class="cta-button" target="_blank"
@@ -302,8 +303,8 @@
       <div class="img-col">
         <picture>
           <source srcset="/assets/images/Quiz.avif" type="image/avif">
-          <img style="width: 100%; height: auto;" src="/assets/images/Quiz.png" alt="Bitcoin Freedom Concept"
-            aria-label="Visual To Take Part in Crypto, Bitcoin Quiz" class="quiz-image">
+          <img width="128" height="192" style="width: 100%; height: auto;" src="/assets/images/Quiz.png"
+            alt="Bitcoin Freedom Concept" aria-label="Visual To Take Part in Crypto, Bitcoin Quiz" class="quiz-image">
         </picture>
       </div>
 
@@ -350,8 +351,8 @@
       <a target="_blank" href="https://simpleswap.io/?ref=53160df239a3" rel="noopener noreferrer">
         <picture>
           <source srcset="/assets/images/simpleswap.avif" type="image/avif">
-          <img loading="lazy" style="width: 100%; height: auto;" src="/assets/images/simpleswap.png"
-            alt="SimpleSwap Instant Crypto Exchange">
+          <img width="956" height="120" loading="lazy" style="width: 100%; height: auto;"
+            src="/assets/images/simpleswap.png" alt="SimpleSwap Instant Crypto Exchange">
         </picture>
       </a>
     </section>
@@ -697,6 +698,10 @@
       <header>
         <h2 id="portal-header-2" class="green">🧭 Your Portal</h2>
         <p id="portal-desc" class="subtitle">Your Gateway to Crypto, Freedom, & Awakened Wealth</p>
+        <p class="trust-badge">
+          ✅ Trusted by over <strong>10,000+ crypto beginners, pros, wealth, freedom and truth-seekers</strong>
+          worldwide.
+        </p>
       </header>
       <nav class="portal-nav">
         <a class="cta-button" href="#quiz" aria-label="Take the Bitcoin readiness quiz">🔍 Quiz</a>
@@ -736,7 +741,7 @@
     // ==========================
     // Step Navigation Functions
     // ==========================
-    
+
     function nextSlide(current) {
       const currentStep = document.getElementById(`step${current}`);
       const nextStep = document.getElementById(`step${current + 1}`);
@@ -745,7 +750,7 @@
         nextStep.classList.add("active");
       }
     }
-    
+
     function prevSlide(current) {
       const currentStep = document.getElementById(`step${current}`);
       const prevStep = document.getElementById(`step${current - 1}`);
@@ -754,75 +759,154 @@
         prevStep.classList.add("active");
       }
     }
-    
+
     // ==========================
     // Quiz Functionality
     // ==========================
-    
+
     document.addEventListener("DOMContentLoaded", () => {
-      console.log("Quiz Script Loaded!");
-    
+
       const quizData = [
         {
-          question: "What is Bitcoin's total supply cap?",
-          options: ["21 million", "100 million", "Infinite"],
-          answer: 0,
+          question: "Which is NOT a DeFi service?",
+          options: ["A. Decentralized lending", "B. Centralized exchange", "C. Yield farming"],
+          answer: 1,
         },
         {
           question: "Which layer powers smart contracts on Bitcoin?",
-          options: ["Lightning", "Stacks", "Ethereum"],
+          options: ["A. Lightning", "B. Stacks", "C. Ethereum"],
           answer: 1,
         },
         {
           question: "What's a private key?",
-          options: ["Your wallet address", "Seed phrase", "Unlock to your funds"],
+          options: ["A. Your wallet address", "B. Seed phrase", "C. Key to Unlock to your funds"],
           answer: 2,
+        },
+        {
+          question: "What is the total supply of Bitcoin?",
+          options: ["A. 21 million", "B. 18 million", "C. 50 million"],
+          answer: 0,
+        },
+        {
+          question: "What is a Bitcoin block reward?",
+          options: ["A. Interest on savings", "B. Reward for mining a block", "C. Airdrop from exchanges"],
+          answer: 1,
+        },
+        {
+          question: "Which blockchain is considered a Layer 1 solution?",
+          options: ["A. Polygon", "B. Ethereum", "C. Arbitrum"],
+          answer: 1,
+        },
+        {
+          question: "What is yield farming in DeFi?",
+          options: ["A. Borrowing funds from decentralized lenders", "B. Earning rewards by staking tokens in liquidity pools", "C. Trading tokens on a decentralized exchange"],
+          answer: 1,
+        },
+        {
+          question: "What is the smallest unit of Bitcoin?",
+          options: ["A. Bit", "B. MicroBTC", "C. Satoshi"],
+          answer: 2,
+        },
+        {
+          question: "What is a “cold wallet”?",
+          options: ["A. Hardware or paper storage", "B. Exchange storage", "C. Online storage"],
+          answer: 0,
+        },
+        {
+          question: "Which consensus mechanism does Bitcoin use?",
+          options: ["A. Proof of Stake", "B. Delegated Proof of Stake", "C. Proof of Work"],
+          answer: 2,
+        },
+        {
+          question: "What is a Bitcoin halving event?",
+          options: ["A. Bitcoin transaction fees are reduced", "B. Bitcoin supply is halved", "C. Block reward is reduced by half"],
+          answer: 2,
+        },
+        {
+          question: "What does “Bitcoin maximalism” refer to?",
+          options: ["A. Support for all cryptocurrencies", "B. Belief Bitcoin will dominate as the only cryptocurrency", "C. Rejecting fiat currencies"],
+          answer: 1,
+        },
+        {
+          question: "What is a “smart contract”?",
+          options: ["A. Code on blockchain that automatically executes when conditions are met or enforces conditions", "B. A wallet for holding assets", "C. A type of security token"],
+          answer: 0,
+        },
+        {
+          question: "Which of the following is NOT a DeFi lending protocol?",
+          options: ["A. Compound", "B. Aave", "C. ProBit"],
+          answer: 2,
+        },
+        {
+          question: "What is a “seed phrase”?",
+          options: ["A. A Bitcoin mining code", "B. A list of recovery words to restore a wallet", "C. A public address to receive funds"],
+          answer: 1,
+        },
+        {
+          question: "What does it mean to “sign” a Bitcoin transaction?",
+          options: ["A. Verifying your identity", "B. Authorizing the transaction with your private key", "C. Adding a transaction fee"],
+          answer: 1,
+        },
+        {
+          question: "What is a “lightning network”?",
+          options: ["A. A Bitcoin mining algorithm", "B. A crypto exchange network", "C. A secondary payment layer for faster transactions"],
+          answer: 2,
+        },
+        {
+          question: "Which of the following is a risk of using an exchange wallet?",
+          options: ["A. Exchange hacks", "B. Fee flactuations", "C. Bonus promotions"],
+          answer: 0,
+        },
+        {
+          question: "Which statement is true about Bitcoin transactions?",
+          options: ["A. Transactions are irreversible", "B. Transactions are private", "C. Transactions are free"],
+          answer: 0,
+        },
+        {
+          question: "What does “impermanent loss” mean in liquidity pools?",
+          options: ["A. Loss of value due to price fluctuations between paired tokens", "B. Loss of assets when tokens are unstaked", "C. Loss of rewards from farming due to contract failure"],
+          answer: 0,
         }
       ];
-    
+
       let currentQuestion = 0;
       let userScore = 0;
       const userAnswers = [];
-    
+
       const container = document.getElementById("quiz-container");
       const prevBtn = document.getElementById("prevBtn");
       const nextBtn = document.getElementById("nextBtn");
-    
-      // Log quiz elements to verify they are available
-      console.log(container, prevBtn, nextBtn);
-    
+
       if (!container || !prevBtn || !nextBtn) {
         console.error("Quiz container or buttons not found!");
         return;
       }
-    
+
       // Function to render each question
       function renderQuestion(index) {
-        console.log(`Rendering question ${index + 1}`);
         const q = quizData[index];
-    
+
         container.innerHTML = `
           <div class="quiz-question"><strong>Q${index + 1}:</strong> ${q.question}</div>
           <div class="quiz-options">
             ${q.options
-              .map(
-                (opt, i) => `<button onclick="selectAnswer(${i})" id="option-${i}">${opt}</button>`
-              )
-              .join("")}
+            .map(
+              (opt, i) => `<button onclick="selectAnswer(${i})" id="option-${i}">${opt}</button>`
+            )
+            .join("")}
           </div>
         `;
-    
+
         // Disable prev and next buttons as needed
         prevBtn.disabled = index === 0;
         nextBtn.disabled = true;
       }
-    
+
       // Expose selectAnswer to global so inline onclick works
       window.selectAnswer = function (selected) {
-        console.log("Answer selected:", selected);
         const q = quizData[currentQuestion];
         const buttons = document.querySelectorAll(".quiz-options button");
-    
+
         buttons.forEach((btn, i) => {
           btn.disabled = true;
           if (i === q.answer) {
@@ -831,15 +915,15 @@
             btn.classList.add("wrong");
           }
         });
-    
+
         if (selected === q.answer) {
           userScore++;
         }
-    
+
         userAnswers[currentQuestion] = selected;
         nextBtn.disabled = false;
       };
-    
+
       function nextQuestion() {
         currentQuestion++;
         if (currentQuestion < quizData.length) {
@@ -848,28 +932,28 @@
           showResults();
         }
       }
-    
+
       function prevQuestion() {
         if (currentQuestion > 0) {
           currentQuestion--;
           renderQuestion(currentQuestion);
         }
       }
-    
+
       function showResults() {
         container.style.display = "none";
         document.getElementById("quiz-controls").style.display = "none";
         const resultDiv = document.getElementById("quiz-result");
-    
+
         const scorePercent = Math.round((userScore / quizData.length) * 100);
         resultDiv.style.display = "block";
-    
+
         document.getElementById("result-message").innerText =
           scorePercent >= 80
             ? `🎉 Congratulations! You passed with ${scorePercent}%`
             : `🔁 You scored ${scorePercent}%. Try again to pass!`;
       }
-    
+
       window.restartQuiz = function () {
         currentQuestion = 0;
         userScore = 0;
@@ -879,7 +963,7 @@
         document.getElementById("quiz-controls").style.display = "flex";
         renderQuestion(currentQuestion);
       };
-    
+
       // Only initialize if quiz container exists on page
       if (container && prevBtn && nextBtn) {
         prevBtn.addEventListener("click", prevQuestion);

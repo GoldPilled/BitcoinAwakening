@@ -1,10 +1,11 @@
-# robots.txt for Bitcoin, Crypto, Blockchain & Digital Currencies Awakening Space
-# Last updated: 2025-04-11
+# robots.txt for BitcoinAwakening.space
+# Purpose: Optimize crawl efficiency, protect sensitive paths, and improve SEO
+# Last updated: 2025-04-18
 
 User-agent: *
 Allow: /
 
-# Block access to sensitive or unnecessary folders
+# === Block sensitive or unnecessary paths ===
 Disallow: /admin/
 Disallow: /login/
 Disallow: /scripts/
@@ -13,37 +14,40 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
 
-# Prevent indexation of certain file types
+# === Prevent crawling of certain file types ===
 Disallow: /*.cgi$
 Disallow: /*.php$
 Disallow: /*.inc$
 Disallow: /*.json$
 Disallow: /js/sw.js
 
-# Block internal search results (optional)
+# === Avoid internal search pages from being indexed ===
 Disallow: /search
 
-# Sitemap location
+# === Sitemap location ===
 Sitemap: https://bitcoinawakening.space/sitemap.xml
 
-# Crawl-delay for specific bots
+# === Crawl-delay for heavy bots ===
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
 Crawl-delay: 5
 
-# Specific permissions for major bots
+# === Explicit allow for major crawlers ===
+User-agent: Googlebot
+Allow: /
+
 User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Googlebot-News
 Allow: /
 
-User-agent: bingbot
+User-agent: Bingbot
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-# End of file
+# === End of file ===

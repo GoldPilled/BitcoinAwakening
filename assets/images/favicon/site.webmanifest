@@ -4,58 +4,13 @@
   "description": "Decode the cryptocurrencies matrix and reclaim your financial sovereignty.",
   "lang": "en",
   "dir": "ltr",
-  "start_url": "/index.html",
+  "start_url": "/?utm_source=web_app_manifest",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#0D0D0D",
   "theme_color": "#F7931A",
   "orientation": "portrait-primary",
-  "categories": [
-    "Spiritual Awakening",
-    "Consciousness Expansion",
-    "Wealth Empowerment",
-    "Mindset Coaching",
-    "Hidden Knowledge",
-    "Occult",
-    "Make Money Online",
-    "Money Coaching",
-    "Conspiracy Truth",
-    "Illumination and Illuminati",
-    "Personal Growth",
-    "bitcoin",
-    "Spiritual Wealth",
-    "Universal Currencies",
-    "currency",
-    "what is bitcoin",
-    "reserve currency",
-    "Bitcoin",
-    "BTC",
-    "buy bitcoin",
-    "bitcoin awakening",
-    "crypto awakening",
-    "financial sovereignty",
-    "blockchain",
-    "crypto truth",
-    "money",
-    "fiat collapse",
-    "CBDC resistance",
-    "digital currency",
-    "digital gold",
-    "money matrix",
-    "DeFi",
-    "tokenization",
-    "RWA",
-    "alpha",
-    "degen",
-    "financial freedom",
-    "satoshi nakamoto",
-    "NFT",
-    "metaverse",
-    "yield farming",
-    "bitcoin pump",
-    "financial revolution",
-    "Bitcoin Consulting"
-  ],
+  "id": "/manifest.json",
   "icons": [
     {
       "src": "/assets/images/favicon/android-chrome-192x192.png",
@@ -93,16 +48,14 @@
       "name": "Home",
       "short_name": "Home",
       "description": "Go to the homepage",
-      "url": "/index.html",
+      "url": "/",
       "icons": [
         {
           "src": "/assets/images/favicon/android-chrome-192x192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
-      ],
-      "lang": "en",
-      "dir": "ltr"
+      ]
     },
     {
       "name": "Download - Crypto Profits eBook",
@@ -115,35 +68,29 @@
           "sizes": "192x192",
           "type": "image/png"
         }
-      ],
-      "lang": "en",
-      "dir": "ltr"
+      ]
     }
   ],
   "screenshots": [
     {
       "src": "/assets/images/screenshot1.png",
       "sizes": "640x480",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/assets/images/screenshot2.png",
       "sizes": "640x480",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "/assets/images/screenshot1.avif",
       "sizes": "640x480",
-      "type": "image/avif",
-      "purpose": "any"
+      "type": "image/avif"
     },
     {
       "src": "/assets/images/screenshot2.avif",
       "sizes": "640x480",
-      "type": "image/avif",
-      "purpose": "any"
+      "type": "image/avif"
     }
   ],
   "related_applications": [
@@ -153,5 +100,22 @@
     }
   ],
   "prefer_related_applications": false,
-  "id": "/manifest.json"
+  "categories": [
+    "finance",
+    "education",
+    "productivity",
+    "lifestyle",
+    "spirituality",
+    "cryptocurrency",
+    "blockchain",
+    "personal-growth",
+    "truth",
+    "awakening",
+    "money",
+    "economics",
+    "politics",
+    "bitcoin",
+    "bitcoinsv",
+    "digital currencies"
+  ]
 }

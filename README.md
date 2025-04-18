@@ -46,12 +46,59 @@ All rights reserved.
 Redistribution, commercial use, or derivative works are strictly prohibited.
 
 ## 📁 File Structure
-BitcoinAwakening/
-├── index.html
-├── css/
+├── BitcoinAwakeningLogo.png
+├── CryptoProfits.pdf
+├── README.md
+├── assets
+│   └── images
+│       ├── BitcoinAwakeningBanner.avif
+│       ├── BitcoinAwakeningBanner.png
+│       ├── BitcoinAwakeningLogo.avif
+│       ├── BitcoinAwakeningLogo.png
+│       ├── Quiz.avif
+│       ├── Quiz.png
+│       ├── candice.avif
+│       ├── candice.png
+│       ├── ebook1.avif
+│       ├── ebook1.png
+│       ├── favicon
+│       │   ├── android-chrome-192x192.png
+│       │   ├── android-chrome-512x512.png
+│       │   ├── apple-icon-144x144.png
+│       │   ├── apple-touch-icon.png
+│       │   ├── favicon-16x16.png
+│       │   ├── favicon-32X32.png
+│       │   ├── favicon-96x96.png
+│       │   ├── favicon.ico
+│       │   ├── favicon.svg
+│       │   ├── site.webmanifest
+│       │   ├── web-app-manifest-192x192.png
+│       │   └── web-app-manifest-512x512.png
+│       ├── ledger.avif
+│       ├── ledger.png
+│       ├── offline.avif
+│       ├── offline.png
+│       ├── og.avif
+│       ├── og.png
+│       ├── screenshot1.avif
+│       ├── screenshot1.png
+│       ├── screenshot2.avif
+│       ├── screenshot2.png
+│       ├── simpleswap.avif
+│       └── simpleswap.png
+├── css
 │   └── styles.css
-├── js/
-│   └── main.js
-├── images/
-│   └── (image files)
-└── README.md
+├── favicon.ico
+├── favicon.svg
+├── index.html
+├── js
+│   └── sw.js
+├── manifest.json
+├── offline.html
+├── robots.txt
+├── sitemap.xml
+└── webfonts
+    ├── orbitron-v31-latin-700.woff2
+    ├── orbitron-v31-latin-regular.woff2
+    ├── playfair-display-v37-latin-700.woff2
+    └── playfair-display-v37-latin-regular.woff2
